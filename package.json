@@ -1,10 +1,13 @@
 {
+    "homepage": "https://tarun9059.github.io/nodejs-project1",
   "name": "random-quote-generator",
   "version": "1.0.0",
   "description": "A Random Quote Generator using Node.js",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build"
   },
   "dependencies": {
     "express": "^4.21.2"
